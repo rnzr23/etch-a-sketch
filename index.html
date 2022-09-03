@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
         <title>Etch-A-Sketch</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -10,7 +11,7 @@
     </head>
     <body>
         <div class="flex-container">
-            <div class="title"><h1>SketchPad</h1></div>
+            <div class="title">SketchPad</div>
             <div class="mode">Mode: Coloring</div>
             <div class="content">
                 <div class="board"></div>
@@ -18,13 +19,13 @@
                     <button onclick="changeColor('black')">Black</button>
                     <button onclick="changeColor('white')">Erasor</button>
                     <button onclick="changeColor('gray')">Gray</button>
-                    <button onclick="changeColor('random')">Random</button>
+                    <button onclick="changeColor('rainbow')">Rainbow</button>
                     <button onclick="resetBoard()">Reset</button>
                 </div>
-                <div>
+                <div id="input-container">
                     <input 
                     type="text" 
-                    placeholder="Size of Board" 
+                    placeholder="Size" 
                     value="16" 
                     onchange="changeSize(this.value)">
                     <button>Set Size</button>

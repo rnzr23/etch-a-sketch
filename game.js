@@ -24,13 +24,13 @@ function changeSize(input) {
         populateBoard(input);
     } 
     else {
-        window.alert("too many squares");
+        window.alert("Needs to be between 2 and 100");
     }
 }
 
 function colorSquare(){
     if(click){
-        if (color === 'random'){
+        if (color === 'rainbow'){
             this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
         }
         else {
